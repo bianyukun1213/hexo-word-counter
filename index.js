@@ -11,13 +11,13 @@ const rImg = /!\[([^\]]*)\]\((\S+?)(?:\s+(['"])(.*?)\3)?\)/g;
 const rImgMasonry = /\{%\s*image_masonry[\s\S]*?%\}/g;
 
 hexo.config.symbols_count_time = Object.assign({
-  symbols: true,
-  time: true,
-  total_symbols: true,
-  total_time: true,
+  symbols          : true,
+  time             : true,
+  total_symbols    : true,
+  total_time       : true,
   exclude_codeblock: false,
-  wpm: 275,
-  suffix: 'mins.'
+  wpm              : 275,
+  suffix           : 'mins.'
 }, hexo.config.symbols_count_time);
 const config = hexo.config.symbols_count_time;
 
